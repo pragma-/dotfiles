@@ -15,6 +15,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/cmp-emoji'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
@@ -22,6 +23,7 @@ Plug 'simrat39/rust-tools.nvim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'junegunn/vim-easy-align'
+Plug 'kdheepak/cmp-latex-symbols'
 call plug#end()
 
 " turn on indentation
@@ -99,6 +101,8 @@ cmp.setup({
     { name = 'path' },
     { name = 'buffer' },
     { name = 'nvim_lsp_signature_help' },
+    { name = 'latex_symbols' },
+    { name = 'emoji' },
   },
 })
 
