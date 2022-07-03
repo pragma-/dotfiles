@@ -7,6 +7,23 @@ set signcolumn=yes
 set updatetime=300
 set cmdheight=2
 
+" vim-plug
+call plug#begin()
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'simrat39/rust-tools.nvim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'junegunn/vim-easy-align'
+call plug#end()
+
 " turn on indentation
 filetype plugin indent on
 
@@ -26,20 +43,11 @@ au BufRead,BufNewFile cpanfile set filetype=perl
 " aliases
 :command Lsplog lua vim.cmd('edit '..vim.lsp.get_log_path())
 
-" vim-plug
-call plug#begin()
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-vsnip'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/vim-vsnip'
-Plug 'hrsh7th/vim-vsnip-integ'
-Plug 'simrat39/rust-tools.nvim'
-Plug 'catppuccin/nvim', {'as': 'catppuccin'}
-call plug#end()
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Configure LSP code navigation shortcuts as found in :help lsp
 nnoremap <silent> <c-]>     <cmd>lua vim.lsp.buf.definition()<CR>
@@ -102,6 +110,9 @@ require('rust-tools').setup({
         },
     },
 })
+
+-- lualine
+require('lualine').setup()
 END
 
 " pretty colors
