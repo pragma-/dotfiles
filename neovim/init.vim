@@ -7,9 +7,6 @@ set signcolumn=yes
 set updatetime=300
 set cmdheight=2
 
-" pretty colors
-colorscheme koehler
-
 " turn on indentation
 filetype plugin indent on
 
@@ -41,6 +38,7 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'simrat39/rust-tools.nvim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 call plug#end()
 
 " Configure LSP code navigation shortcuts as found in :help lsp
@@ -105,3 +103,7 @@ require('rust-tools').setup({
     },
 })
 END
+
+" pretty colors
+let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
+colorscheme catppuccin
