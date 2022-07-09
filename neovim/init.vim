@@ -5,7 +5,7 @@ set laststatus=2
 set nu
 set signcolumn=yes
 set updatetime=300
-set cmdheight=2
+set cmdheight=1
 
 " vim-plug
 call plug#begin()
@@ -69,6 +69,11 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 -- rust-analyzer lsp
 require('lspconfig').rust_analyzer.setup {
+    capabilities = capabilities,
+}
+
+-- clangd lsp
+require('lspconfig').clangd.setup {
     capabilities = capabilities,
 }
 
