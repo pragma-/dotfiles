@@ -81,6 +81,11 @@ require('lspconfig').clangd.setup {
 -- pls perl lsp
 require'lspconfig'.perlpls.setup {
     capabilities = capabilities,
+    settings = {
+        perl = {
+            inc = { '$HOME/perl5/lib', '$ROOT_PATH/lib' },
+        },
+    },
 }
 
 -- code-completion
