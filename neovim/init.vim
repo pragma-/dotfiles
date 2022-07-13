@@ -1,11 +1,12 @@
-set tabstop=4
-set sw=4
-set expandtab
-set laststatus=2
-set nu
-set signcolumn=yes
-set updatetime=300
-set cmdheight=1
+set tabstop=4           " number of spaces that a tab counts for
+set shiftwidth=4        " number of spaces per indentation
+set expandtab           " insert spaces instead of tabs
+set laststatus=2        " last window always has a status line
+set number              " show line numbers
+set signcolumn=yes      " show sign column for LSP indicators
+set updatetime=300      " idle time in milliseconds before swap is written
+set cmdheight=1         " number of screen lines to use for command-line
+set jumpoptions+=stack  " make jumplist behave like tag stack
 
 " vim-plug
 call plug#begin()
@@ -74,6 +75,11 @@ require('lspconfig').rust_analyzer.setup {
 
 -- clangd lsp
 require('lspconfig').clangd.setup {
+    capabilities = capabilities,
+}
+
+-- pls perl lsp
+require'lspconfig'.perlpls.setup {
     capabilities = capabilities,
 }
 
