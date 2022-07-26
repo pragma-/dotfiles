@@ -903,21 +903,21 @@ colors:
   # Normal colors
   normal:
     black:   '0x2e2e2e'
-    red:     '0xeb4129'
+    red:     '0xcd0000'
     green:   '0x00cd00'
     yellow:  '0xf6c744'
     blue:    '0x0000ee'
-    magenta: '0x7b5cb0'
-    cyan:    '0x64dbed'
+    magenta: '0xcd00cd'
+    cyan:    '0x00cdcd'
     white:   '0xe5e9f0'
 
   # Bright colors
   bright:
     black:   '0x565656'
-    red:     '0xec5357'
-    green:   '0xc0e17d'
+    red:     '0xff0000'
+    green:   '0x00ff00'
     yellow:  '0xf9da6a'
     blue:    '0x5c5cff'
-    magenta: '0xa47de9'
-    cyan:    '0x99faf2'
+    magenta: '0xff00ff'
+    cyan:    '0x00ffff'
     white:   '0xffffff'
