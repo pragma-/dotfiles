@@ -1,0 +1,13 @@
+[user]
+	name = Pragmatic Software
+	email = pragma78@gmail.com
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+[push]
+	default = simple
+[filter "ignoredebug"]
+	clean = "sed '/#debug$/d'"
+	smudge = cat
