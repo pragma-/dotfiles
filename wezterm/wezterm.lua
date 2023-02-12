@@ -61,6 +61,10 @@ return {
 
     hyperlink_rules = {
         -- Include closing ) in links
+        -- This properly handles URLs within ()'s too, e.g.:
+        -- blah blah (https://en.wikipedia.org/wiki/Set_(mathematics)) blah blah
+        -- properly linkifies only `https://en.wikipedia.org/wiki/Set_(mathematics)`
+        -- This was my main reason for switching to this terminal emulator as my daily IRC driver :-)
         {
             regex = '\\b\\w+://[^) ]+\\)\\b*',
             format = '$0',
