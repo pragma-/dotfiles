@@ -1,5 +1,10 @@
 local wezterm = require 'wezterm'
 
+local colors = wezterm.color.get_builtin_schemes()['CGA']
+
+colors.foreground = "#c9c9c9"
+colors.background = "#0f0f10"
+
 return {
     default_prog = { "E:/cygwin64/bin/bash.exe", "--login" },
 
@@ -10,6 +15,9 @@ return {
 
     initial_cols = 215,
     initial_rows = 58,
+
+    color_schemes = { ['custom'] = colors },
+    color_scheme = 'custom',
 
     window_padding = {
         left = 0,
@@ -60,17 +68,19 @@ return {
     },
 
     hyperlink_rules = {
-        -- Include closing ) in links
+        -- Include closing ) in links. E.g. https://foo/bar_(baz)
+        --
         -- This properly handles URLs within ()'s too, e.g.:
         -- blah blah (https://en.wikipedia.org/wiki/Set_(mathematics)) blah blah
         -- properly linkifies only `https://en.wikipedia.org/wiki/Set_(mathematics)`
-        -- This was my main reason for switching to this terminal emulator as my daily IRC driver :-)
+        -- but (http://foo/bar) will linkify to `http://foo/bar)`. Fortunately, URLs
+        -- are very rarely wrapped with ()!
         {
             regex = '\\b\\w+://[^) ]+\\)\\b*',
             format = '$0',
         },
 
-        -- Linkify things that look like URLs
+        -- Linkify things that look like URLs.
         {
             regex = '\\b\\w+://\\S+\\b',
             format = '$0',
