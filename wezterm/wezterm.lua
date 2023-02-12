@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 
 local colors = wezterm.color.get_builtin_schemes()['CGA']
 
-colors.foreground = "#c9c9c9"
+colors.foreground = "#b0b0b0"
 colors.background = "#0f0f10"
 
 return {
