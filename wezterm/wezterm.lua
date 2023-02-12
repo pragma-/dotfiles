@@ -50,6 +50,15 @@ return {
         },
     },
 
+    keys = {
+        -- Turn off the default ALT-Enter action
+        {
+            key = 'Enter',
+            mods = 'ALT',
+            action = wezterm.action.DisableDefaultAssignment,
+        },
+    },
+
     hyperlink_rules = {
         -- Include closing ) in links
         {
