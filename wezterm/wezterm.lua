@@ -68,21 +68,18 @@ return {
     },
 
     hyperlink_rules = {
-        -- Include closing ) in links. E.g. https://foo/bar_(baz)
-        --
-        -- This properly handles URLs within ()'s too, e.g.:
-        -- blah blah (https://en.wikipedia.org/wiki/Set_(mathematics)) blah blah
-        -- properly linkifies only `https://en.wikipedia.org/wiki/Set_(mathematics)`
-        -- but (http://foo/bar) will linkify to `http://foo/bar)`. Fortunately, URLs
-        -- are very rarely wrapped with ()!
+        -- Handle URLs wrapped with punctuation
+        -- e.g. 'http://foo' (http://foo) <http://foo> etc
+        -- the punctuation will be underlined but excluded when clicked
         {
-            regex = '\\b\\w+://[^) ]+\\)\\b*',
-            format = '$0',
+            regex = '[[:punct:]](\\w+://\\S+)[[:punct:]]',
+            format = '$1',
         },
 
-        -- Linkify things that look like URLs.
+        -- Linkify things that look like URLs
+        -- and include terminating ), / or - characters, if any
         {
-            regex = '\\b\\w+://\\S+\\b',
+            regex = '\\b\\w+://\\S+[)/a-zA-Z0-9-]+',
             format = '$0',
         },
     },
