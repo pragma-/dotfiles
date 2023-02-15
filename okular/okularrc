@@ -1,0 +1,58 @@
+\s Height 2560x1440=1339
+\s Width 2560x1440=1772
+\s XPosition 2560x1440=503
+\s YPosition 2560x1440=63
+State=AAAA/wAAAAD9AAAAAAAABuwAAATyAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+\s=
+\s Height 1920x1080=1345
+\s Height 2560x1440=1183
+\s Height 2560x1440\s=1237
+\s Width 1920x1080=1566
+\s Width 2560x1440=1566
+\s Width 2560x1440\s=1536
+\s XPosition 1920x1080=2562
+\s XPosition 2560x1440=262
+\s XPosition 2560x1440\s=706
+\s YPosition 1920x1080=32
+\s YPosition 2560x1440=118
+\s YPosition 2560x1440\s=238
+\sHeight 1920x1080=1048
+\sHeight 2560x1440=1166
+\sWidth 1920x1080=1566
+\sWidth 2560x1440=1916
+\sXPosition 1920x1080=2
+\sXPosition 2560x1440=1
+\sYPosition 1920x1080=32
+\sYPosition 2560x1440=32
+State=AAAA/wAAAAD9AAAAAAAABgAAAASMAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAQAAAAEAAAAsAHEAdQBpAGMAawBBAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHICAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAAAIAAAABAAAAIgBhAG4AbgBvAHQAYQB0AGkAbwBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=E:/Downloads/The Mathematics of Everyday Life.pdf
+File10[$e]=E:/Downloads/Programming Rust 2nd Edition.pdf
+File2[$e]=E:/Downloads/Concrete Mathematics 2e.pdf
+File3[$e]=E:/Downloads/vdoc.pub_calculus-larson-11e.pdf
+File4[$e]=E:/Downloads/vdoc.pub_calculus-stewart-8e.pdf
+File5[$e]=E:/Downloads/vdoc.pub_gdel-escher-bach-an-eternal-golden-braid.pdf
+File6[$e]=E:/Downloads/PLAI Version 3.2.0 electronic.pdf
+File7[$e]=E:/Downloads/pierce_types_and_programming_languages_2002.pdf
+File8[$e]=E:/Downloads/ctfp-scala--a325ca2.pdf
+File9[$e]=E:/Downloads/Algorithms-to-Live-By_-The-Computer-Science-of-Human-Decisions-2016.pdf
+Name1[$e]=The Mathematics of Everyday Life.pdf
+Name10[$e]=Programming Rust 2nd Edition.pdf
+Name2[$e]=Concrete Mathematics 2e.pdf
+Name3[$e]=vdoc.pub_calculus-larson-11e.pdf
+Name4[$e]=vdoc.pub_calculus-stewart-8e.pdf
+Name5[$e]=vdoc.pub_gdel-escher-bach-an-eternal-golden-braid.pdf
+Name6[$e]=PLAI Version 3.2.0 electronic.pdf
+Name7[$e]=pierce_types_and_programming_languages_2002.pdf
+Name8[$e]=ctfp-scala--a325ca2.pdf
+Name9[$e]=Algorithms-to-Live-By_-The-Computer-Science-of-Human-Decisions-2016.pdf
+
+[UiSettings]
+ColorScheme=Breeze Dark
