@@ -1,0 +1,28 @@
+app simple time tracker
+recordType	1	Studying	📚	8	0	0		0	0	0
+recordType	2	Fapping	✊	2	0	0		0	0	0
+recordType	3	Pooping	🧻	17	0	0		0	0	0
+recordType	4	Peeing	🚽	13	0	0		0	0	0
+recordType	5	Bath	🛀	7	0	0		0	0	0
+recordType	6	Shower	🚿	6	0	0		0	0	0
+recordType	7	Brush teeth	🪥	7	0	0		0	0	0
+recordType	8	Gaming	🎮	1	0	0		0	0	0
+recordType	9	Media	📺	16	0	0		0	0	0
+recordType	10	Coding	💻	8	0	0		0	0	0
+recordType	11	Reddit	🌐	1	0	0		0	0	0
+recordType	12	IRC	🖥️	7	0	0		0	0	0
+recordType	13	Groceries 	🛒	9	0	0		0	0	0
+recordType	14	Dining	🍽️	11	0	0		0	0	0
+recordType	15	Snacking	🥨	15	0	0		0	0	0
+recordType	16	Cooking	👨‍🍳	11	0	0		0	0	0
+recordType	17	Cleaning	🧽	6	0	0		0	0	0
+recordType	18	Nap	🛋️	4	0	0		0	0	0
+recordType	19	Sleep	🛏️	4	0	0		0	0	0
+recordType	20	Vape	🌲	0	0	0	-16165109	0	0	0
+recordType	21	Reading	📖	2	0	0		0	0	0
+recordType	22	Chess	♟️	14	0	0		0	0	0
+recordType	23	Exercise	💪	10	0	0		0	0	0
+recordType	24	Washing up	🧼	7	0	0		0	0	0
+recordType	25	Laundry 	🧦	6	0	0		0	0	0
+recordType	26	Vacuum 	🧹	7	0	0		0	0	0
+recordType	27	Misc		5	0	0		0	0	0
