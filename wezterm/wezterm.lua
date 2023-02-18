@@ -68,16 +68,18 @@ return {
     },
 
     hyperlink_rules = {
-        -- Handle URLs wrapped with punctuation
-        -- e.g. 'http://foo' (http://foo) <http://foo> etc
+        -- First handle URLs wrapped with punctuation (i.e. brackets)
+        -- e.g. [http://foo] (http://foo) <http://foo> etc
         -- the punctuation will be underlined but excluded when clicked
         {
             regex = '[[:punct:]](\\w+://\\S+)[[:punct:]]',
             format = '$1',
         },
 
-        -- Linkify things that look like URLs
+        -- Then handle URLs not wrapped in brackets
         -- and include terminating ), / or - characters, if any
+        -- these seem to be the most common trailing characters that are part of URLs
+        -- there may be additional common ones . . .
         {
             regex = '\\b\\w+://\\S+[)/a-zA-Z0-9-]+',
             format = '$0',
