@@ -72,8 +72,9 @@ return {
         -- e.g. [http://foo] (http://foo) <http://foo> etc
         -- the punctuation will be underlined but excluded when clicked
         {
-            regex = '[[:punct:]](\\w+://\\S+)[[:punct:]]',
+            regex = '[(\\[<](\\w+://\\S+)[)\\]>]',
             format = '$1',
+            highlight = 1,
         },
 
         -- Then handle URLs not wrapped in brackets
