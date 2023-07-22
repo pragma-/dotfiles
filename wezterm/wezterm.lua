@@ -32,7 +32,7 @@ return {
     cursor_blink_ease_in = 'Constant',
     cursor_blink_ease_out = 'Constant',
 
-    font = wezterm.font_with_fallback({ 'Consolas' }),
+    font = wezterm.font_with_fallback({ 'Consolas', 'Noto Sans Math' }),
     -- font = wezterm.font 'JetBrains Mono', { weight = 'Normal', style = 'Normal' },
     font_size = 11,
     freetype_render_target = 'HorizontalLcd',
