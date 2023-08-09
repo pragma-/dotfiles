@@ -1,6 +1,7 @@
 [user]
 	name = Pragmatic Software
 	email = pragma78@gmail.com
+	signingkey = CC916B6E3C84ECCE
 [alias]
 	co = checkout
 	ci = commit
@@ -11,3 +12,5 @@
 [filter "ignoredebug"]
 	clean = "sed '/#debug$/d'"
 	smudge = cat
+[commit]
+	gpgsign = true
