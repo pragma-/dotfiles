@@ -7,10 +7,13 @@ set signcolumn=yes      " show sign column for LSP indicators
 set updatetime=300      " idle time in milliseconds before swap is written
 set cmdheight=1         " number of screen lines to use for command-line
 set jumpoptions+=stack  " make jumplist behave like tag stack
-set mouse=a             " enable mouse actions
+set mouse=              " disable mouse actions
 set termguicolors       " fancy colors
 
 " vim-plug
+" vim:  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" nvim: curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" then run `:PlugInstall`
 call plug#begin()
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
